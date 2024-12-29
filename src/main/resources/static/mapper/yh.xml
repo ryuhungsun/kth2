@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jusung.web.dao.YhDAO">
+	
+	<!-- 회사 목록 조회 -->
+	<select id="selectCompanyList" parameterType="String" resultType="CompanyDTO">
+			SELECT companyNo, companyName, companyLoc 
+			FROM company  	
+	</select>
+	
+	<!-- 측정자 목록 조회 -->
+	 <select id="selectMeasurerList" parameterType="String" resultType="MeasurerDTO">
+			SELECT companyNo, measurerNo, measurerName, length, weight, baseAngle 
+			FROM measurer 	
+			WHERE companyNo = #{companyNo}
+	</select>
+	
+	<!-- 측정 목록 조회 -->
+	<select id="selectMeasureList" parameterType="String" resultType="MeasureDTO">
+			SELECT measurerNo, DATE_FORMAT(measureDate, '%Y-%m-%d') measureDate, baseAngle, position1, position2, angle 
+			FROM measure 	
+			WHERE measurerNo = #{measurerNo}
+	</select> 
+	
+	<!-- 측정 데이터 여부 조회 -->
+	<select id="selectMeasureYn" parameterType="String" resultType="int">
+			SELECT COUNT(measurerNo) cnt 
+			FROM measure 	
+			WHERE measurerNo = #{measurerNo} AND  measureDate = #{measureDate}
+	</select> 
+	
+	<!-- 측정 목록 입력 -->
+	<insert id="insertMeasure" parameterType="hashMap">
+			INSERT INTO measure(measurerNo, measureDate, baseAngle, position1, position2, angle ) 	
+			VALUES (#{measurerNo}, #{measureDate}, #{baseAngle}, #{position1}, #{position2}, #{angle})
+	</insert> 
+	
+	<!-- 측정 목록 입력 -->
+	<update id="updateMeasure" parameterType="hashMap">
+		UPDATE measure
+		SET baseAngle = #{baseAngle}, position1 = #{position1}, position2 = #{position2}, angle = #{angle}
+		WHERE measurerNo = #{measurerNo} AND measureDate = #{measureDate}
+	</update>
+	
+	<!-- 로그인 조회 -->
+	<select id="login" parameterType="hashMap" resultType="UserDTO">
+			SELECT id, pwd, name
+			FROM user 	
+			WHERE id = #{id} AND  pwd = #{pwd}
+	</select> 
+</mapper>

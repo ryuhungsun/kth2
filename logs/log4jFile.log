@@ -1,0 +1,21 @@
+2024-12-29 01:18:29,092 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-29 01:18:29,094 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-29 01:18:30,259 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-12-29 01:18:30,524 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 1429 ms
+2024-12-29 01:18:31,073 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-12-29 01:18:31,119 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-12-29 01:19:02,262 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-12-29 01:19:02,263 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2024-12-29 01:21:52,243 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-29 01:21:52,247 [Thread-5] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown(shutDownGracefully:54) - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29 01:21:52,759 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown(doShutdown:76) - Graceful shutdown complete
+2024-12-29 01:21:53,135 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-12-29 01:21:53,258 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 339 ms
+2024-12-29 01:21:53,413 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-12-29 01:21:53,432 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-12-29 01:21:53,441 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-12-29 01:22:03,592 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-12-29 01:22:03,594 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2024-12-29 01:23:54,928 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-29 01:23:54,930 [Thread-7] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown(shutDownGracefully:54) - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-29 01:23:55,377 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown(doShutdown:76) - Graceful shutdown complete
